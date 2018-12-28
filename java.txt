@@ -1,0 +1,130 @@
+№1
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = 4;
+        int b;
+        double d = 4.0;
+        double c;
+        String s = "DITI ";
+        String f;
+
+        b = scan.nextInt();
+        c = scan.nextDouble();
+        scan.nextLine();
+        f=scan.nextLine();
+
+        int sum1= i+b;
+        System.out.println(sum1);
+        double sum2= c+d;
+        System.out.println(sum2);
+        String sum3 = s+f;
+        System.out.println(sum3);
+        scan.close();
+    }
+}
+
+
+№2
+
+public class Main {
+
+    public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	String inputString = scan.nextLine();
+	scan.close();
+	System.out.println("Hello, World");
+	System.out.print(inputString);
+    }
+}
+
+
+№3
+
+public class main {
+    private int age;
+
+    public main(int initialAge){
+
+        if(initialAge == 0)
+            System.out.println("Ошибка. Возраст равен 0");
+        age = 0;
+        
+    }
+
+
+    public void amIOld() {
+        if (age < 13) System.out.println("Ребенок");
+        if (age > 13 && age < 18) System.out.println("Подросток");
+        if (age > 18) System.out.println("Взрослый");
+
+    }
+
+    //Увеличить возраст на 1 год
+    public void yearPasses() {
+        age += 1;
+
+    }
+
+    public static void Person(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int i = 0; i < T; i++) {
+            int age = sc.nextInt();
+            Person p = new Person(age);
+            p.amIOld();
+            for (int j = 0; j < 3; j++) {
+                p.yearPasses();
+            }
+            p.amIOld();
+            System.out.println();
+        }
+        sc.close();
+    }
+}
+
+№4
+
+public class Solution {
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        while (n >= 1 && n <= 100 && n % 2 == 0){
+            if(n >= 2 && n <= 5)
+                System.out.println("Not Weird");
+            if(n >= 6 && n <= 20)
+                System.out.println("Weird");
+            if(n > 20)
+                System.out.println("Not Weird");
+            else
+                System.out.println("Weird");
+        }
+        System.out.println("Not conditions");
+
+        scanner.close();
+    }
+№5
+
+public class Main {
+
+    static int solveMeFirst(int a, int b) {
+        return a*b;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a;
+        a = in.nextInt();
+        int b;
+        b = in.nextInt();
+        int sum;
+        sum = solveMeFirst(a, b);
+        System.out.println(sum);
+        System.out.println("Hellow");
+    }
+}
+
